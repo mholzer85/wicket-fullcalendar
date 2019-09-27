@@ -1,12 +1,12 @@
 target
-.idea
+.idea/**
 .metadata
 .project
 .classpath
-.idea/workspace.xml
 *.~
 *~
 *.orig
 test-output
 *.log
 *.iml
+.gitconfig

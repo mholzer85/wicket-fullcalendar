@@ -1,9 +1,9 @@
-/**
+/*
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  * in compliance with the License. You may obtain a copy of the License at
- * 
+ *
  * http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software distributed under the License
  * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
  * or implied. See the License for the specific language governing permissions and limitations under
@@ -14,79 +14,26 @@ package io.github.mholzer85.wicket.fullcalendar;
 
 import java.io.Serializable;
 
-public class ButtonText implements Serializable {
-	private String prev, next, prevYear, nextYear, today, month, week, day;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
-	public String getPrev() {
-		return prev;
-	}
+@Accessors (chain = true)
+@Getter
+@Setter
+class ButtonText implements Serializable {
 
-	public ButtonText setPrev(String prev) {
-		this.prev = prev;
-		return this;
-	}
-
-	public String getNext() {
-		return next;
-	}
-
-	public ButtonText setNext(String next) {
-		this.next = next;
-		return this;
-	}
-
-	public String getPrevYear() {
-		return prevYear;
-	}
-
-	public ButtonText setPrevYear(String prevYear) {
-		this.prevYear = prevYear;
-		return this;
-	}
-
-	public String getNextYear() {
-		return nextYear;
-	}
-
-	public ButtonText setNextYear(String nextYear) {
-		this.nextYear = nextYear;
-		return this;
-	}
-
-	public String getToday() {
-		return today;
-	}
-
-	public ButtonText setToday(String today) {
-		this.today = today;
-		return this;
-	}
-
-	public String getMonth() {
-		return month;
-	}
-
-	public ButtonText setMonth(String month) {
-		this.month = month;
-		return this;
-	}
-
-	public String getWeek() {
-		return week;
-	}
-
-	public ButtonText setWeek(String week) {
-		this.week = week;
-		return this;
-	}
-
-	public String getDay() {
-		return day;
-	}
-
-	public ButtonText setDay(String day) {
-		this.day = day;
-		return this;
-	}
+	private String prev;
+	private String next;
+	private String prevYear;
+	private String nextYear;
+	private String today;
+	private String month;
+	private String week;
+	private String day;
+	private String listDay;
+	private String listWeek;
+	private String listMonth;
+	private String listYear;
 
 }

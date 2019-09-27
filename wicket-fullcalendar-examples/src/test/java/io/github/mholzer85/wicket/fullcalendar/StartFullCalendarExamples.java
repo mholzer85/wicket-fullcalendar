@@ -1,4 +1,4 @@
-/**
+/*
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  * in compliance with the License. You may obtain a copy of the License at
  * 
@@ -11,14 +11,20 @@
  */
 package io.github.mholzer85.wicket.fullcalendar;
 
+import java.lang.management.ManagementFactory;
+
+import javax.management.MBeanServer;
+
 import org.eclipse.jetty.jmx.MBeanContainer;
-import org.eclipse.jetty.server.*;
+import org.eclipse.jetty.server.HttpConfiguration;
+import org.eclipse.jetty.server.HttpConnectionFactory;
+import org.eclipse.jetty.server.SecureRequestCustomizer;
+import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.server.ServerConnector;
+import org.eclipse.jetty.server.SslConnectionFactory;
 import org.eclipse.jetty.util.resource.Resource;
 import org.eclipse.jetty.util.ssl.SslContextFactory;
 import org.eclipse.jetty.webapp.WebAppContext;
-
-import javax.management.MBeanServer;
-import java.lang.management.ManagementFactory;
 
 /**
  * Separate startup class for people that want to run the examples directly. Use parameter

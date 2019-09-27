@@ -1,4 +1,4 @@
-/**
+/*
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  * in compliance with the License. You may obtain a copy of the License at
  * 
@@ -12,9 +12,11 @@
 
 package io.github.mholzer85.wicket.fullcalendar;
 
+import lombok.NonNull;
+
 public class EventNotFoundException extends RuntimeException {
 
-	public EventNotFoundException(String message) {
+	public EventNotFoundException(@NonNull String message) {
 		super(message);
 	}
 
