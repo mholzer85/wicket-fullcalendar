@@ -72,6 +72,8 @@ public class Config implements Serializable {
 	private String timeFormat;
 	private String locale;
 
+	private Integer height;
+
 	@JsonRawValue
 	private String eventRender;
 
