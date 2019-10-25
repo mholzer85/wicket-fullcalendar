@@ -21,7 +21,7 @@ import lombok.experimental.Accessors;
 @Accessors (chain = true)
 @Getter
 @Setter
-class ButtonText implements Serializable {
+public class ButtonText implements Serializable {
 
 	private String prev;
 	private String next;
